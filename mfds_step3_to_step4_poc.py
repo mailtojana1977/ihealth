@@ -6,16 +6,15 @@ import requests
 import argparse
 import subprocess
 from pathlib import Path
-
+import sys
 
 def ensure_playwright_chromium():
-    # Playwright default browser cache path on Streamlit Cloud
     browser_root = Path.home() / ".cache" / "ms-playwright"
 
     if not browser_root.exists():
         print("[INFO] Chromium not found. Installing Playwright Chromium at runtime...")
         subprocess.run(
-            ["python", "-m", "playwright", "install", "chromium"],
+            [sys.executable, "-m", "playwright", "install", "chromium"],
             check=True
         )
     else:
