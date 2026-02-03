@@ -3,7 +3,8 @@ import os
 
 OUTPUT_DIR = "output"
 
-STEP1_2_FILE = f"{OUTPUT_DIR}/step1_step2_static.json"
+STEP1_2_FILE_OUTPUT = "output/step1_step2_static.json"
+STEP1_2_FILE_ROOT = "step1_step2_static.json"
 STEP4_FILE = f"{OUTPUT_DIR}/step4_product_understanding.json"
 STEP5_8_FILE = f"{OUTPUT_DIR}/step5_to_step8_sections.json"
 STEP9_FILE = f"{OUTPUT_DIR}/step9_conclusion.json"
@@ -21,7 +22,16 @@ def section_md(title, content):
 
 
 def run():
-    step1_2 = load_json(STEP1_2_FILE)
+    if os.path.exists(STEP1_2_FILE_OUTPUT):
+        step1_2 = load_json(STEP1_2_FILE_OUTPUT)
+    elif os.path.exists(STEP1_2_FILE_ROOT):
+        print("[INFO] Using Step 1–2 static file from repo root")
+        step1_2 = load_json(STEP1_2_FILE_ROOT)
+    else:
+        raise FileNotFoundError(
+            "Step 1–2 static file not found in output/ or repo root"
+        )
+
     step4 = load_json(STEP4_FILE)
     step5_8 = load_json(STEP5_8_FILE)
     step9 = load_json(STEP9_FILE)
