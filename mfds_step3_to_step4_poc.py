@@ -4,6 +4,10 @@ import json
 import os
 import requests
 import argparse
+import os
+
+os.environ["PLAYWRIGHT_BROWSERS_PATH"] = "0"
+
 
 
 # ================= CONFIG =================
@@ -180,7 +184,7 @@ def run():
     raw_evidence = None
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=not SHOW_BROWSER)
+        browser = p.chromium.launch(headless=True,args=["--no-sandbox", "--disable-dev-shm-usage"])
         page = browser.new_page()
 
         page.goto(MFDS_SEARCH_URL, timeout=60000)
