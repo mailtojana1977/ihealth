@@ -1,0 +1,11 @@
+{
+  "step1_regulatory_authority": {
+    "section_title": "Regulatory Authority",
+    "content": "In South Korea, medical devices are regulated by the Ministry of Food and Drug Safety (MFDS), which governs the manufacture, importation, distribution, and post-market surveillance of medical devices under the Medical Device Act. Compliance with MFDS requirements is mandatory to ensure that a medical device is legally placed on and maintained in the South Korean market. For procurement activities, devices must be sourced through a duly authorized Korean License Holder (KLH), as foreign manufacturers or suppliers cannot directly sell medical devices in South Korea without a locally licensed entity. The KLH acts as the legal representative responsible for regulatory compliance, market authorization, and post-market obligations."
+  },
+  "step2_key_regulations": {
+    "section_title": "Key Regulations and Guidance",
+    "content": "Medical devices in South Korea are regulated under the Medical Device Act (MDA) and its associated Enforcement Decree and Enforcement Regulations, which define device classification, approval or certification pathways, labeling requirements, quality system obligations, and post-market surveillance responsibilities. Additional regulatory controls include Korean Good Manufacturing Practice (KGMP) requirements, MFDS notifications on device classification and technical standards, and Unique Device Identification (UDI) and traceability obligations where applicable. This review reflects regulatory expectations relevant to procurement activities and is intended to support verification that devices sourced are legally authorized, appropriately classified, and compliant with applicable MFDS requirements."
+  }
+}
+
