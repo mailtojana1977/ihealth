@@ -1,7 +1,4 @@
 [server]
 headless = true
 
-[runner]
-installCommand = "python -m playwright install --with-deps chromium"
-
 
