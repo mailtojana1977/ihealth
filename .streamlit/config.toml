@@ -2,4 +2,5 @@
 headless = true
 
 [runner]
-installCommand = "playwright install chromium"
+installCommand = "python -m playwright install chromium"
+
