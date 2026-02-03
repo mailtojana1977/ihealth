@@ -2,4 +2,3 @@ streamlit>=1.31,<1.40
 playwright==1.41.2
 greenlet==3.0.3
 requests
-
