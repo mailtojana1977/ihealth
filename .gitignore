@@ -2,6 +2,9 @@ venv/
 __pycache__/
 output/
 .env
+Code/
+step3_to_step4_output/
+
 
 
 
